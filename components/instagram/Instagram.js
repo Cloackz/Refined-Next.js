@@ -8,7 +8,7 @@ const Instagram = () => {
 		<section className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
-					<Heading tag='p' text='Instagram' type='sub'></Heading>
+					<Heading tag='span' text='Instagram' type='sub'></Heading>
 					<Heading
 						className={styles.Title}
 						text='follow me '

@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+	reactStrictMode: true,
+
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.svg$/,
+			use: ['svg-sprite-loader', 'svgo-loader'],
+		})
+		return config
+	},
 }
 
 module.exports = nextConfig

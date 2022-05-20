@@ -30,7 +30,7 @@ const About = () => {
 		<section className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
-					<Heading tag='p' text='About Me' type='sub'></Heading>
+					<Heading tag='span' text='About Me' type='sub'></Heading>
 					<Heading
 						className={styles.Title}
 						text='meet the owner'

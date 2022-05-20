@@ -146,6 +146,16 @@
 		padding: 33px 10px 32px 10px;
 	}
 
+	&::before {
+		top: -10px;
+		left: 10px;
+		position: absolute;
+		content: '';
+		width: 45px;
+		height: 33px;
+		background: url('/img/quotes.svg');
+	}
+
 	&__text {
 		max-width: 320px;
 		margin: 0 auto;

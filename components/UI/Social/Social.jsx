@@ -1,11 +1,17 @@
 import styles from './Social.module.scss'
-import SocialItem from './SocialItem/SocialItem'
+
+import Icon from '/components/UI/Icon/Icon'
 
 const Social = () => {
 	return (
-		<ul className={styles.Social}>
-			<SocialItem />
-		</ul>
+		<div className={styles.Social}>
+			<span className={styles.Wrapper}>
+				<Icon id='facebook' width='8' height='14' />
+			</span>
+			<span className={styles.Wrapper}>
+				<Icon id='instagram' width='13' height='13' />
+			</span>
+		</div>
 	)
 }
 

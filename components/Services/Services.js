@@ -11,7 +11,7 @@ const Services = () => {
 		<section className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
-					<Heading tag='p' text='Our Services' type='sub'></Heading>
+					<Heading tag='span' text='Our Services' type='sub'></Heading>
 					<Heading
 						className={styles.Title}
 						text='our services'

@@ -1,0 +1,48 @@
+{
+	"hero": {
+		"title": "med spa located in meridian, idaho",
+		"text": "It is our mission to deliver beautiful and natural results while maintaining safety and professionalism."
+	},
+
+	"testimonials": {
+		"title": "what our clients say testimonials",
+		"data": [
+			{
+				"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
+				"title": "Alyssa C.",
+				"rating": 5,
+				"pk": 1
+			},
+			{
+				"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
+				"title": "Tiffany B.",
+				"rating": 4,
+				"pk": 2
+			},
+			{
+				"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
+				"title": "Angela K.",
+				"rating": 3,
+				"pk": 3
+			},
+			{
+				"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
+				"title": "Alyssa C.",
+				"rating": 5,
+				"pk": 4
+			},
+			{
+				"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
+				"title": "Tiffany B.",
+				"rating": 5,
+				"pk": 5
+			},
+			{
+				"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
+				"title": "Angela K.",
+				"rating": 5,
+				"pk": 6
+			}
+		]
+	}
+}

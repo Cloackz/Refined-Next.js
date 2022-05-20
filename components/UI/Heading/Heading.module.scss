@@ -72,6 +72,8 @@
 	font-weight: 400;
 	line-height: calc(72 / 60);
 	color: rgba($color-pink, 0.3);
+	pointer-events: none;
+	user-select: none;
 }
 
 // &_two {
