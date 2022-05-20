@@ -1,0 +1,34 @@
+$font-serif-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+	Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+	'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-mono-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+	'Courier New', monospace;
+
+$font-base-family: 'Lato', $font-serif-family, sans-serif;
+$font-decorative-family: 'Cormorant', $font-serif-family, sans-serif;
+
+$font-base-size-unit: 16;
+$font-base-size: 16px;
+
+/*
+* Breakpoints
+*/
+
+$media-tablet: 768px;
+$media-tablet-landscape: 1024px;
+$media-desktop: 1200px;
+
+/*
+* Colors
+*/
+
+$color-bg: #f9f7f8;
+$color-text: #25232b;
+$color-powder: #f9f1f0;
+$color-pink: #deb3ad;
+
+/*
+* transition
+*/
+
+$transition: 0.4s ease;

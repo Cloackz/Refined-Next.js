@@ -1,0 +1,33 @@
+@import '/styles/variables.scss';
+
+.Box {
+	background: $color-powder;
+	margin-bottom: 20px;
+
+	@media (min-width: $media-tablet-landscape) {
+		width: 50%;
+		justify-content: flex-start;
+		height: min-content;
+		margin: 0 10px 20px 10px;
+	}
+}
+
+.Title {
+	font-family: $font-decorative-family;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: calc(27 / 24);
+	display: block;
+	background: $color-text;
+	color: $color-powder;
+	padding: 22px 0 22px 10px;
+	text-align: start;
+}
+
+.List {
+	padding: 0 10px 15px 10px;
+
+	@media (min-width: $media-tablet) {
+		padding: 0 10px 10px 10px;
+	}
+}

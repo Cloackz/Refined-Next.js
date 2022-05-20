@@ -1,0 +1,17 @@
+@import '/styles/variables.scss';
+
+.Text {
+	font-family: $font-base-family;
+	font-size: $font-base-size;
+	line-height: calc(21 / 16);
+	font-weight: 300;
+
+	@media (min-width: $media-tablet) {
+		line-height: calc(22 / 16);
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		font-size: 18px;
+		line-height: calc(24 / 18);
+	}
+}

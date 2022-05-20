@@ -1,0 +1,10 @@
+@import '/styles/variables.scss';
+
+.Social {
+	display: flex;
+	flex-wrap: wrap;
+
+	@media (min-width: $media-tablet) {
+		flex-wrap: nowrap;
+	}
+}

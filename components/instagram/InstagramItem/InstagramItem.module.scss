@@ -1,0 +1,25 @@
+@import '/styles/variables.scss';
+
+.Item {
+	margin: 5px;
+
+	@media (min-width: $media-tablet) {
+		margin: 10px;
+	}
+}
+
+.Wrapper {
+	position: relative;
+	width: 158px;
+	height: 158px;
+
+	@media (min-width: $media-tablet) {
+		width: 262px;
+		height: 262px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		width: 280px;
+		height: 280px;
+	}
+}

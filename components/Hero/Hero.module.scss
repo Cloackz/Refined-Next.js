@@ -1,0 +1,75 @@
+@import '/styles/variables.scss';
+
+.Hero {
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@media (min-width: $media-tablet) {
+		top: 110px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		top: 130px;
+	}
+}
+
+.Content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.Title {
+	margin-bottom: 20px;
+	min-width: 450px;
+
+	@media (min-width: $media-tablet) {
+		margin-bottom: 10px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		margin-bottom: 10px;
+	}
+}
+
+.Text {
+	margin-bottom: 25px;
+	max-width: 300px;
+
+	@media (min-width: $media-tablet) {
+		margin-bottom: 46px;
+		max-width: 100%;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		margin-bottom: 30px;
+		max-width: 100%;
+	}
+}
+
+.Wrapper {
+	position: relative;
+	width: 286px;
+	height: 411px;
+
+	@media (min-width: $media-tablet) {
+		width: 391px;
+		height: 553px;
+		margin-bottom: 10px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		width: 580px;
+		height: 553px;
+		margin-bottom: 20px;
+	}
+}
+
+.Button {
+	@media (max-width: 400px) {
+		max-width: 250px;
+	}
+}

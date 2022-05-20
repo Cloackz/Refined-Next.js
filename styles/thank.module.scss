@@ -1,0 +1,41 @@
+@import '/styles/variables.scss';
+
+.Thank {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+
+	@media (min-width: $media-tablet) {
+		top: 30%;
+	}
+}
+
+.Vector {
+	margin-bottom: 114px;
+	&::before {
+		content: url('/img/thank-vector.svg');
+		width: 172px;
+		height: 129px;
+	}
+}
+
+.Title {
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+.Text {
+	margin-bottom: 10px;
+	min-width: 280px;
+	max-width: 520px;
+}
+
+.Button {
+	margin-top: 40px;
+}

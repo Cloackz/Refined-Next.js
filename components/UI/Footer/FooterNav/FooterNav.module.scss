@@ -1,0 +1,11 @@
+@import '/styles/variables.scss';
+
+.List {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	@media (min-width: $media-tablet-landscape) {
+		margin-right: 60px;
+	}
+}

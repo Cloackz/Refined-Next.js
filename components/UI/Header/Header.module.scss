@@ -1,0 +1,35 @@
+@import '/styles//variables.scss';
+
+.Block {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(180deg, rgba(249, 247, 248, 0.1), $color-bg 100%),
+		url('/img/bg-lines.png') center / cover no-repeat fixed;
+	height: 745px;
+
+	@media (min-width: $media-tablet) {
+		height: 950px;
+		padding-top: 10px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		height: 950px;
+		padding-top: 20px;
+	}
+}
+
+.Wrapper {
+	position: relative;
+	width: 181px;
+	height: 73px;
+
+	@media (min-width: $media-tablet) {
+		width: 235px;
+		height: 95px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		margin-bottom: 20px;
+	}
+}

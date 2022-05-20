@@ -1,0 +1,73 @@
+@import '/styles/variables.scss';
+
+.Button {
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	padding: 14px 20px;
+	width: 100%;
+	max-width: 335px;
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: all $transition;
+	font-family: $font-decorative-family;
+	font-size: $font-base-size;
+	line-height: calc(18 / 16);
+	font-weight: 700;
+	color: $color-bg;
+	background: linear-gradient(84.94deg, #d66d75 -2.63%, #e29587 101.46%);
+	background-size: 200% 200%;
+
+	@media (min-width: $media-tablet) {
+		max-width: 350px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		max-width: 380px;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.8;
+		background-position: 100% 100%;
+	}
+
+	&:active {
+		opacity: 0.4;
+	}
+}
+
+.ButtonPrimary {
+	display: block;
+	cursor: pointer;
+	padding: 16px 20px;
+	width: 100%;
+	max-width: 335px;
+	text-transform: uppercase;
+	font-family: $font-decorative-family;
+	font-size: $font-base-size;
+	line-height: calc(18 / 16);
+	font-weight: 700;
+	color: #d66d75;
+	border: 1px solid #e29587;
+	background: transparent;
+	transition: all $transition;
+
+	@media (min-width: $media-tablet) {
+		max-width: 350px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		max-width: 380px;
+	}
+
+	&:hover,
+	&:focus {
+		background: #e29587;
+		color: $color-bg;
+	}
+
+	&:active {
+		background: #deb3ad;
+	}
+}

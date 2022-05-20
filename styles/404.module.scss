@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+.Error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+
+	@media (min-width: $media-tablet) {
+		top: 30%;
+	}
+}
+
+.Code {
+	font-family: 'AlexBrush', 'Lato', serif;
+	font-size: 130px;
+	line-height: calc(180 / 130);
+	margin-bottom: 30px;
+
+	@media (min-width: $media-tablet) {
+		font-size: 200px;
+		line-height: calc(240 / 200);
+		margin-bottom: 50px;
+	}
+}
+
+.Title {
+	margin-bottom: 40px;
+	text-transform: capitalize;
+}

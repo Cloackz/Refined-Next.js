@@ -1,0 +1,20 @@
+@import '/styles/variables.scss';
+
+.Link {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: calc(22 / 18);
+	color: $color-bg;
+	text-decoration: none;
+	transition: $transition;
+	margin: 0 30px 30px 0;
+
+	&:last-child {
+		margin: 0 0 30px 0;
+	}
+
+	&:hover,
+	&:focus {
+		color: $color-pink;
+	}
+}

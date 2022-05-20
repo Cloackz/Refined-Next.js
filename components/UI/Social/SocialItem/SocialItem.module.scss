@@ -1,0 +1,17 @@
+@import '/styles/variables.scss';
+
+.Item {
+	cursor: pointer;
+	content: '';
+	display: block;
+	background: url('/public/sprite/sprite.svg') 0, -88px no-repeat;
+	width: 34px;
+	height: 34px;
+}
+
+// .Link {
+// 	display: block;
+// 	background: url(/public/sprite/sprite.svg) 0, -88px no-repeat;
+// 	width: 34px;
+// 	height: 34px;
+// }

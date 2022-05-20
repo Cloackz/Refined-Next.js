@@ -1,0 +1,157 @@
+@import '/styles/variables.scss';
+
+.Block {
+	background: $color-text;
+}
+
+.Content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 55px 0 40px 0;
+
+	@media (min-width: $media-tablet) {
+		padding: 95px 0 60px 0;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		padding: 75px 0 80px 0;
+	}
+}
+
+.Inner {
+	margin: 30px 0 0 0;
+
+	@media (min-width: $media-tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 30px 0 0 0;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		margin: 63px 0 0 0;
+	}
+}
+
+.Bottom {
+	@media (min-width: $media-tablet) {
+		display: contents;
+		width: 48%;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		display: initial;
+		margin: 0 0 0 80px;
+	}
+}
+
+.Wrapper {
+	position: relative;
+	width: 335px;
+	height: 427px;
+	display: flex;
+	margin: 0 auto;
+
+	@media (min-width: $media-tablet) {
+		width: 257px;
+		height: 427px;
+		margin: 0;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		width: 380px;
+		height: 526px;
+		margin: 0;
+	}
+
+	@media (max-width: 350px) {
+		width: 300px;
+	}
+}
+
+.Descrip {
+	margin: 30px 0;
+
+	@media (min-width: $media-tablet) {
+		flex: 1 1;
+		margin: 30px 0 0 20px;
+		width: 50%;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		margin: 30px 0 40px 0;
+		width: 100%;
+	}
+
+	&__title {
+		font-family: $font-decorative-family;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 22px;
+		line-height: calc(27 / 22);
+		color: $color-bg;
+
+		margin-bottom: 10px;
+
+		@media (min-width: $media-tablet) {
+			font-size: 20px;
+			line-height: calc(25 / 20);
+		}
+
+		@media (min-width: $media-tablet-landscape) {
+			font-size: 30px;
+			line-height: calc(36 / 30);
+		}
+	}
+
+	&__text {
+		@media (min-width: $media-tablet) {
+			width: 65%;
+		}
+
+		@media (min-width: $media-tablet-landscape) {
+			width: 100%;
+		}
+	}
+}
+
+.Title {
+	color: $color-bg;
+}
+
+.Text {
+	color: $color-bg;
+	@media (min-width: $media-tablet) {
+		width: 65%;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		width: 100%;
+	}
+}
+
+.Quote {
+	position: relative;
+	width: 100%;
+	background: $color-bg;
+	text-align: center;
+	padding: 33px 0;
+
+	@media (min-width: $media-tablet) {
+		padding: 34px 10px 31px 10px;
+		margin: 30px 0 0 0;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		padding: 33px 10px 32px 10px;
+	}
+
+	&__text {
+		max-width: 320px;
+		margin: 0 auto;
+
+		@media (min-width: $media-tablet) {
+			max-width: 380px;
+		}
+	}
+}

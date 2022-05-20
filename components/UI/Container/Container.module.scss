@@ -1,0 +1,14 @@
+@import '/styles/variables.scss';
+.Container {
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 1020px;
+
+	@media (min-width: $media-tablet) {
+		padding: 0 40px;
+	}
+
+	@media (min-width: $media-tablet-landscape) {
+		padding: 0 60px;
+	}
+}
