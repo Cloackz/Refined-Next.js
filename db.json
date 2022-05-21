@@ -4,6 +4,99 @@
 		"text": "It is our mission to deliver beautiful and natural results while maintaining safety and professionalism."
 	},
 
+	"services": {
+		"title": "our services",
+		"text": "We specialize in non-invasive and non-surgical treatments including Botox and fillers.",
+		"data": [
+			{
+				"head": "Dermal Filter",
+				"pk": 1,
+				"service": [
+					{
+						"favor": "LIp filler",
+						"price": "$575",
+						"pk": 1
+					},
+					{
+						"favor": "Cheek fille",
+						"price": "$1150",
+						"pk": 2
+					},
+					{
+						"favor": "Chin/Jawline filler",
+						"price": "$1250",
+						"pk": 3
+					},
+					{
+						"favor": "Hand filler",
+						"price": "$1650",
+						"pk": 4
+					},
+					{
+						"favor": "Undereye filler",
+						"price": "$1250",
+						"pk": 5
+					}
+				]
+			},
+			{
+				"head": "Sculptra",
+				"pk": 2,
+				"service": [
+					{
+						"favor": "Upper face sculptra",
+						"price": "$750",
+						"pk": 1
+					},
+					{
+						"favor": "Lower face sculptra ",
+						"price": "$750",
+						"pk": 2
+					},
+					{
+						"favor": "Full face sculptra ",
+						"price": "$1500",
+						"pk": 3
+					}
+				]
+			},
+			{
+				"head": "Botox / Dysport",
+				"pk": 3,
+				"service": [
+					{
+						"favor": "New Patient Botox/Dysport",
+						"price": "$8.75",
+						"pk": 1
+					},
+					{
+						"favor": "Returning Patient Botox/Dysport",
+						"price": "$8.75",
+						"pk": 2
+					}
+				]
+			},
+			{
+				"head": "Chemical peel",
+				"pk": 4,
+				"service": [
+					{
+						"favor": "Peel",
+						"price": "$175",
+						"pk": 1
+					}
+				]
+			}
+		]
+	},
+
+	"about": {
+		"title": "meet the owner",
+		"head": "rachel ryan",
+		"text": "Hello! My name is Rachel Ryan and I am a Registered Nurse with my Masters in Administrative Nurse Leadership and masters degree as a Family Nurse Practitioner. I have been an Aesthetic Nurse since graduating Nursing school in 2015 and am very dedicated to continuing education and learning new and up-to-date techniques. My passion is helping men and women age gracefully while maintaining their natural aesthetic. I have an artistic eye for facial details and maintaining symmetry through non-invasive and non-surgical treatments including Botox and fillers.",
+		"quote": "It is my mission to deliver beautiful and natural results while maintaining safety and professionalism."
+	},
+
 	"testimonials": {
 		"title": "what our clients say testimonials",
 		"data": [
@@ -16,13 +109,13 @@
 			{
 				"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
 				"title": "Tiffany B.",
-				"rating": 4,
+				"rating": 5,
 				"pk": 2
 			},
 			{
 				"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
 				"title": "Angela K.",
-				"rating": 3,
+				"rating": 5,
 				"pk": 3
 			},
 			{

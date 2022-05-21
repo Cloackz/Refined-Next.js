@@ -4,7 +4,6 @@ export default function Document() {
 	return (
 		<Html lang='en'>
 			<Head>
-				<link href='/public/fonts/font-name.css' rel='preconnect' as='font' />
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'

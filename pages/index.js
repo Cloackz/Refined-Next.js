@@ -11,16 +11,20 @@ import Testimonials from '../components/testimonials/Testimonials'
 export async function getServerSideProps() {
 	const testimonials = await fetchApi('testimonials')
 	const hero = await fetchApi('hero')
+	const services = await fetchApi('services')
+	const about = await fetchApi('about')
 
 	return {
 		props: {
 			testimonials,
 			hero,
+			services,
+			about,
 		},
 	}
 }
 
-export default function Home({ testimonials, hero }) {
+export default function Home({ testimonials, hero, services, about }) {
 	return (
 		<>
 			<Head>
@@ -28,9 +32,9 @@ export default function Home({ testimonials, hero }) {
 			</Head>
 			<Layout>
 				<Hero hero={hero} />
-				<Services />
+				<Services services={services} />
 				<Instagram />
-				<About />
+				<About about={about} />
 				<Testimonials testimonials={testimonials} />
 			</Layout>
 		</>
