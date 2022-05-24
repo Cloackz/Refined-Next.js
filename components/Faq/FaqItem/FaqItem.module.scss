@@ -1,0 +1,92 @@
+@import '/styles/variables.scss';
+
+.Item {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0 10px 0;
+	border-bottom: 1px solid $color-pink;
+
+	&:first-child {
+		padding: 0 0 10px 0;
+	}
+
+	&:last-child {
+		border: none;
+	}
+
+	&:hover .Button,
+	&:focus .Button {
+		color: $color-pink;
+	}
+
+	&:hover .Button::after {
+		transform: rotate(0deg);
+	}
+
+	&:hover .Button::before {
+		background: $color-pink;
+	}
+
+	&:hover .Button::after {
+		background: $color-pink;
+	}
+}
+
+.Button {
+	position: relative;
+	display: flex;
+	text-align: start;
+	background: transparent;
+	cursor: pointer;
+	transition: $transition;
+	font-family: $font-decorative-family;
+	font-size: 20px;
+	line-height: calc(25 / 20);
+	padding-right: 20px;
+
+	@media (min-width: $media-tablet-landscape) {
+		font-size: 22px;
+		line-height: calc(27 / 22);
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 20px;
+		height: 1px;
+		background: $color-text;
+		top: 10px;
+		right: 0;
+		transition: background $transition;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		width: 20px;
+		height: 1px;
+		background: $color-text;
+		top: 10px;
+		right: 0;
+		transition: $transition;
+		transform: rotate(90deg);
+	}
+
+	&--active {
+		& + .Desc {
+			max-height: 190px;
+		}
+	}
+}
+
+.Desc {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height $transition;
+	margin-top: 10px;
+
+	&_show {
+		height: auto;
+		max-height: 190px;
+	}
+}

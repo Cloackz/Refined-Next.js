@@ -6,14 +6,14 @@
 }
 
 .Content {
-	padding: 55px 0 40px 0;
+	padding: 20px 0 40px 0;
 
 	@media (min-width: $media-tablet) {
-		padding: 95px 0 60px 0;
+		padding: 60px 0 60px 0;
 	}
 
 	@media (min-width: $media-tablet-landscape) {
-		padding: 75px 0 80px 0;
+		padding: 40px 0 80px 0;
 	}
 }
 
@@ -29,7 +29,7 @@
 
 .List {
 	text-align: start;
-	margin-top: 30px;
+	margin: 30px 0;
 
 	scrollbar-color: $color-pink rgba($color-pink, 0.3);
 	scrollbar-width: thin 2px;
@@ -52,5 +52,12 @@
 	@media (min-width: $media-tablet-landscape) {
 		margin-top: 40px;
 		max-height: 370px;
+	}
+}
+
+.Button {
+	margin: 0 auto;
+	@media (min-width: $media-tablet) {
+		display: none;
 	}
 }

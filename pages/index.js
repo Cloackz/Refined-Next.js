@@ -7,12 +7,14 @@ import Services from '../components/Services/Services'
 import Instagram from '../components/instagram/Instagram'
 import About from '../components/About/About'
 import Testimonials from '../components/testimonials/Testimonials'
+import Faq from '../components/Faq/Faq'
 
 export async function getServerSideProps() {
 	const testimonials = await fetchApi('testimonials')
 	const hero = await fetchApi('hero')
 	const services = await fetchApi('services')
 	const about = await fetchApi('about')
+	const faq = await fetchApi('faq')
 
 	return {
 		props: {
@@ -20,11 +22,12 @@ export async function getServerSideProps() {
 			hero,
 			services,
 			about,
+			faq,
 		},
 	}
 }
 
-export default function Home({ testimonials, hero, services, about }) {
+export default function Home({ testimonials, hero, services, about, faq }) {
 	return (
 		<>
 			<Head>
@@ -36,6 +39,7 @@ export default function Home({ testimonials, hero, services, about }) {
 				<Instagram />
 				<About about={about} />
 				<Testimonials testimonials={testimonials} />
+				<Faq faq={faq}></Faq>
 			</Layout>
 		</>
 	)
