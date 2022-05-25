@@ -11,17 +11,15 @@ const Contact = () => {
 	return (
 		<section className={styles.Block}>
 			<div className={styles.Content}>
-				<Container>
-					<Heading tag='span' text='Contact Us' type='sub'></Heading>
-					<Heading
-						className={styles.Title}
-						text='reach me today'
-						type='page'
-					></Heading>
-					<div className={styles.Wrapper}>
-						<Map></Map>
-					</div>
-				</Container>
+				<Heading tag='span' text='Contact Us' type='sub'></Heading>
+				<Heading
+					className={styles.Title}
+					text='reach me today'
+					type='page'
+				></Heading>
+				<div className={styles.Wrapper}>
+					<Map></Map>
+				</div>
 			</div>
 		</section>
 	)

@@ -7,10 +7,12 @@
 .Content {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 40px;
+	padding: 0 20px 40px 20px;
+	margin: 0 auto;
+	max-width: 1020px;
 
 	@media (min-width: $media-tablet) {
-		padding-bottom: 60px;
+		padding: 0 40px 60px 40px;
 	}
 	@media (min-width: $media-tablet-landscape) {
 		padding: 75px 60px 45px 60px;

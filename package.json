@@ -1,9 +1,9 @@
 {
-	"name": "dl-education-refined-dima-react",
+	"name": "refined-next.js",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "concurrently \"npm run server\" \"npm run start\"",
+		"dev": "concurrently --kill-others \"npm run server\" \"npm run start\"",
 		"start": "next dev",
 		"build": "next build",
 		"lint": "next lint",
@@ -17,12 +17,11 @@
 		"react": "18.1.0",
 		"react-dom": "18.1.0",
 		"sass": "^1.51.0",
-		"styled-components": "^5.3.5",
 		"svg-sprite-loader": "^6.0.11",
 		"svgo-loader": "^3.0.0"
 	},
 	"devDependencies": {
-		"concurrently": "^7.2.0",
+		"concurrently": "^7.2.1",
 		"eslint": "8.15.0",
 		"eslint-config-next": "12.1.6"
 	}
