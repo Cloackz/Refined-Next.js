@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import Container from '/components/UI/Container/Container'
 import Heading from '/components/UI/Heading/Heading'
 
@@ -6,6 +8,8 @@ import Item from '/components/Faq/FaqItem/FaqItem'
 import styles from '/components/Faq/Faq.module.scss'
 
 const Faq = ({ faq: { data, title } }) => {
+	const [faqs, setFaqs] = useState()
+
 	return (
 		<section className={styles.Block}>
 			<Container>

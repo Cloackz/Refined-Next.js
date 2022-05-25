@@ -1,0 +1,30 @@
+@import '/styles/variables.scss';
+
+.Block {
+	background-color: $color-text;
+}
+
+.Content {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+
+	@media (min-width: $media-tablet) {
+		padding-bottom: 60px;
+	}
+	@media (min-width: $media-tablet-landscape) {
+		padding: 75px 60px 45px 60px;
+	}
+}
+
+.Title {
+	color: $color-bg;
+}
+
+.Wrapper {
+	display: contents;
+
+	@media (min-width: $media-tablet-landscape) {
+		display: flex;
+	}
+}

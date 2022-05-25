@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '/styles/404.module.scss'
 import Heading from '/components/UI/Heading/Heading.jsx'
-import Button from '/components/UI/Button/Link.jsx'
+import Button from '/components/UI/Button/Button.jsx'
 import Layout from '../layout/Layout'
 
 const Error = () => {

@@ -97,66 +97,69 @@
 		"quote": "It is my mission to deliver beautiful and natural results while maintaining safety and professionalism."
 	},
 
-	"testimonials": {
+	"testimonialsPage": {
 		"title": "what our clients say testimonials",
 		"button": "Show More Reviews",
-		"data": [
-			{
-				"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
-				"title": "Alyssa C.",
-				"rating": 5,
-				"pk": 1
-			},
-			{
-				"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
-				"title": "Tiffany B.",
-				"rating": 5,
-				"pk": 2
-			},
-			{
-				"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
-				"title": "Angela K.",
-				"rating": 5,
-				"pk": 3
-			},
-			{
-				"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
-				"title": "Alyssa C.",
-				"rating": 5,
-				"pk": 4
-			},
-			{
-				"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
-				"title": "Tiffany B.",
-				"rating": 5,
-				"pk": 5
-			},
-			{
-				"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
-				"title": "Angela K.",
-				"rating": 5,
-				"pk": 6
-			},
-			{
-				"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
-				"title": "Alyssa C.",
-				"rating": 5,
-				"pk": 7
-			},
-			{
-				"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
-				"title": "Tiffany B.",
-				"rating": 5,
-				"pk": 8
-			},
-			{
-				"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
-				"title": "Angela K.",
-				"rating": 5,
-				"pk": 9
-			}
-		]
+		"length": 9,
+		"offset": 3
 	},
+
+	"testimonials": [
+		{
+			"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
+			"title": "Alyssa C.",
+			"rating": 5,
+			"pk": 1
+		},
+		{
+			"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
+			"title": "Tiffany B.",
+			"rating": 5,
+			"pk": 2
+		},
+		{
+			"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
+			"title": "Angela K.",
+			"rating": 5,
+			"pk": 3
+		},
+		{
+			"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
+			"title": "Alyssa C.",
+			"rating": 5,
+			"pk": 4
+		},
+		{
+			"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
+			"title": "Tiffany B.",
+			"rating": 5,
+			"pk": 5
+		},
+		{
+			"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
+			"title": "Angela K.",
+			"rating": 5,
+			"pk": 6
+		},
+		{
+			"text": "Rachel is absolutely wonderful, very professional, and knowledgeable. She takes the time to answer questions and address any concerns. Not to mention she does a great job!",
+			"title": "Alyssa C.",
+			"rating": 5,
+			"pk": 7
+		},
+		{
+			"text": "Rachel is absolutely amazing! Hands down best service and results ever! My first experience with lips was done by someone else and my lips dissolved so fast and when I met Rachel she listened attentively and gave me EXACTLY what I wanted with amazing results!This woman is a goddess! I cannot wait to go back to her in a fewweeks for another syringe THANK YOU RACHEL!",
+			"title": "Tiffany B.",
+			"rating": 5,
+			"pk": 8
+		},
+		{
+			"text": "Rachel was amazing. She made me feel at ease, was very personable and professional. Definitely will recommend her to anyone and everyone!!",
+			"title": "Angela K.",
+			"rating": 5,
+			"pk": 9
+		}
+	],
 
 	"faq": {
 		"title": "frequently asked questions",
@@ -164,32 +167,38 @@
 			{
 				"button": "When should you start Botox?",
 				"text": "A full syringe is 1/4 tsp product and will only increase your size by 10-15% and lasts 6-12 months. A half syringe will not increase size, but will help add hydration and definition to the lip and lasts 3-4 months. A half syringe is a great way to maintain lip size once your optimal size is achieved, every 4-6 months or so.",
-				"pk": 1
+				"id": 1,
+				"open": "true"
 			},
 			{
 				"button": "What is the difference between lip filler and lip flip?",
 				"text": "A full syringe is 1/4 tsp product and will only increase your size by 10-15% and lasts 6-12 months. A half syringe will not increase size, but will help add hydration and definition to the lip and lasts 3-4 months. A half syringe is a great way to maintain lip size once your optimal size is achieved, every 4-6 months or so.",
-				"pk": 2
+				"id": 2,
+				"open": "false"
 			},
 			{
 				"button": "Can I do Botox or filler when pregnant?",
 				"text": "A full syringe is 1/4 tsp product and will only increase your size by 10-15% and lasts 6-12 months. A half syringe will not increase size, but will help add hydration and definition to the lip and lasts 3-4 months. A half syringe is a great way to maintain lip size once your optimal size is achieved, every 4-6 months or so.",
-				"pk": 3
+				"id": 3,
+				"open": "false"
 			},
 			{
 				"button": "Can Botox help with TMJ?",
 				"text": "A full syringe is 1/4 tsp product and will only increase your size by 10-15% and lasts 6-12 months. A half syringe will not increase size, but will help add hydration and definition to the lip and lasts 3-4 months. A half syringe is a great way to maintain lip size once your optimal size is achieved, every 4-6 months or so.",
-				"pk": 4
+				"id": 4,
+				"open": "false"
 			},
 			{
 				"button": "How do I choose between a full and a half syringe?",
 				"text": "A full syringe is 1/4 tsp product and will only increase your size by 10-15% and lasts 6-12 months. A half syringe will not increase size, but will help add hydration and definition to the lip and lasts 3-4 months. A half syringe is a great way to maintain lip size once your optimal size is achieved, every 4-6 months or so.",
-				"pk": 5
+				"id": 5,
+				"open": "false"
 			},
 			{
 				"button": "What are rules after Botox?",
 				"text": "A full syringe is 1/4 tsp product and will only increase your size by 10-15% and lasts 6-12 months. A half syringe will not increase size, but will help add hydration and definition to the lip and lasts 3-4 months. A half syringe is a great way to maintain lip size once your optimal size is achieved, every 4-6 months or so.",
-				"pk": 6
+				"id": 6,
+				"open": "false"
 			}
 		]
 	}

@@ -38,11 +38,9 @@ const Hero = ({ hero: { title, text } }) => {
 				</div>
 				<Heading className={styles.Title} text={title} tag='h1' />
 				<Text className={styles.Text} text={text} />
-				<Button
-					className={styles.Button}
-					type='Button'
-					text='Book Now'
-				></Button>
+				<Button className={styles.Button} type='primary' href='#'>
+					Book Now
+				</Button>
 			</div>
 		</section>
 	)

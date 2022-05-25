@@ -1,6 +1,6 @@
 import Container from '../UI/Container/Container'
 import Heading from '../UI/Heading/Heading'
-import Button from '../UI/Button/Link'
+import Button from '../UI/Button/Button'
 import Text from '../UI/Text/Text'
 import styles from './Services.module.scss'
 import List from './ServicesBox/ServicesBox'
@@ -49,12 +49,9 @@ const Services = () => {
 							</List>
 						</div>
 					</div>
-					<Button
-						className={styles.Button}
-						type='Primary'
-						href='#'
-						text='Book Now'
-					/>
+					<Button className={styles.Button} type='secondary' href='#'>
+						Book Now
+					</Button>
 				</div>
 			</Container>
 		</section>

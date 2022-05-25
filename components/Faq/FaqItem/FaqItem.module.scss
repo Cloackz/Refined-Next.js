@@ -71,19 +71,13 @@
 		transition: $transition;
 		transform: rotate(90deg);
 	}
-
-	&--active {
-		& + .Desc {
-			max-height: 190px;
-		}
-	}
 }
 
-.Desc {
+.Content {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height $transition;
-	margin-top: 10px;
+	margin: 10px 0;
 
 	&_show {
 		height: auto;

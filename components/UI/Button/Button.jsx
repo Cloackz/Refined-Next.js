@@ -1,18 +1,26 @@
 import classNames from 'classnames'
 import styles from './Button.module.scss'
 
-const Button = ({ text = '', type = '', className = '' }) => {
+const Button = ({
+	type = '',
+	className = '',
+	onClick = null,
+	children,
+	...attrs
+}) => {
+	const Tag = attrs.href ? 'a' : 'button'
+
 	return (
-		<button
-			type='button'
+		<Tag
 			className={classNames(
 				styles.Button,
-				styles[`Button${type}`],
+				styles[`Button_${type}`],
 				`${className}`
 			)}
+			onClick={onClick}
 		>
-			{text}
-		</button>
+			{children}
+		</Tag>
 	)
 }
 

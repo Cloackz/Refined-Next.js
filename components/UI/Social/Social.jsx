@@ -6,7 +6,7 @@ const Social = () => {
 	return (
 		<div className={styles.Social}>
 			<span className={styles.Wrapper}>
-				<Icon id='facebook' width='8' height='14' />
+				<Icon className={styles.Ico} id='facebook' width='8' height='14' />
 			</span>
 			<span className={styles.Wrapper}>
 				<Icon id='instagram' width='13' height='13' />
