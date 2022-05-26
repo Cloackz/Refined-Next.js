@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import Heading from '../UI/Heading/Heading'
-import Button from '../UI/Button/Button'
-import Text from '../UI/Text/Text'
+import Heading from '/components/UI/Heading/Heading'
+import Button from '/components/UI/Btn/Btn'
+import Text from '/components/UI/Text/Text'
 
 import useMedia from '../../hooks/useMedia'
 import styles from './Hero.module.scss'
@@ -36,8 +36,10 @@ const Hero = ({ hero: { title, text } }) => {
 						objectFit='center'
 					/>
 				</div>
-				<Heading className={styles.Title} text={title} tag='h1' />
-				<Text className={styles.Text} text={text} />
+				<Heading className={styles.Title} tag='h1' type='main'>
+					{title}
+				</Heading>
+				<Text className={styles.Text}>{text}</Text>
 				<Button className={styles.Button} type='primary' href='#'>
 					Book Now
 				</Button>

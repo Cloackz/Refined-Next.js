@@ -1,26 +1,24 @@
-import Container from '../UI/Container/Container'
-import Heading from '../UI/Heading/Heading'
-import Button from '../UI/Button/Button'
-import Text from '../UI/Text/Text'
-import styles from './Services.module.scss'
+import Container from '/components/UI/Container/Container'
+import Heading from '/components/UI/Heading/Heading'
+import Button from '/components/UI/Btn/Btn'
+import Text from '/components/UI/Text/Text'
 import List from './ServicesBox/ServicesBox'
 import Item from './ServicesItem/ServicesItem'
 
-const Services = () => {
+import styles from './Services.module.scss'
+
+const Services = ({ services: { title, text } }) => {
 	return (
 		<section className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
-					<Heading tag='span' text='Our Services' type='sub'></Heading>
-					<Heading
-						className={styles.Title}
-						text='our services'
-						type='page'
-					></Heading>
-					<Text
-						className={styles.Text}
-						text='We specialize in non-invasive and non-surgical treatments including Botox and fillers. '
-					></Text>
+					<Heading tag='span' type='sub'>
+						Our Services
+					</Heading>
+					<Heading className={styles.Title} type='page'>
+						{title}
+					</Heading>
+					<Text className={styles.Text}>{text}</Text>
 					<div className={styles.Wrapper}>
 						<div className={styles.Group}>
 							<List title='Dermal Filter'>

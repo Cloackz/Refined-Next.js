@@ -1,5 +1,6 @@
 import classNames from 'classnames'
-import styles from './Button.module.scss'
+
+import styles from './Btn.module.scss'
 
 const Button = ({
 	type = '',

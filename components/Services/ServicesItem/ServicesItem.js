@@ -1,6 +1,6 @@
 import styles from './ServicesItem.module.scss'
 
-const PriceItem = ({ service = ' ', price = '' }) => {
+const PriceItem = ({ service = '', price = '' }) => {
 	return (
 		<li className={styles.Item}>
 			<span className={styles.Text}>{service}</span>

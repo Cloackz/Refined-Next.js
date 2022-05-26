@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import fetchApi from '/utils/api'
-import Layout from '../layout/Layout'
+import Layout from '/layout/Layout'
 
-import Hero from '../components/Hero/Hero'
-import Services from '../components/Services/Services'
-import Instagram from '../components/instagram/Instagram'
-import About from '../components/About/About'
-import Testimonials from '../components/testimonials/Testimonials'
-import Faq from '../components/Faq/Faq'
+import Hero from '/components/Hero/Hero'
+import Services from '/components/Services/Services'
+import Instagram from '/components/Instagram/Instagram'
+import About from '/components/About/About'
+import Testimonials from '/components/Testimonials/Testimonials'
+import Faq from '/components/Faq/Faq'
 import Contact from '/components/Contact/Contact'
 
 export async function getServerSideProps() {
@@ -17,6 +17,7 @@ export async function getServerSideProps() {
 	const services = await fetchApi('services')
 	const about = await fetchApi('about')
 	const faq = await fetchApi('faq')
+	const contact = await fetchApi('contact')
 
 	return {
 		props: {
@@ -26,6 +27,7 @@ export async function getServerSideProps() {
 			services,
 			about,
 			faq,
+			contact,
 		},
 	}
 }
@@ -37,6 +39,7 @@ export default function Home({
 	services,
 	about,
 	faq,
+	contact,
 }) {
 	return (
 		<>
@@ -53,7 +56,7 @@ export default function Home({
 					testimonials={testimonials}
 				/>
 				<Faq faq={faq} />
-				<Contact />
+				<Contact contact={contact} />
 			</Layout>
 		</>
 	)

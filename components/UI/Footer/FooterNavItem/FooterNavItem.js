@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import styles from './FooterNavItem.module.scss'
 
 const FooterNavItem = ({ href = '#', text }) => {

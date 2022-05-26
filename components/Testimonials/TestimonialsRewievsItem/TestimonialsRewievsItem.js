@@ -1,4 +1,4 @@
-import Star from '../testimonialsStar/testimonialsStar'
+import Star from '/components/Testimonials/TestimonialsStar/TestimonialsStar'
 import Text from '/components/UI/Text/Text'
 
 import styles from './TestimonialsRewievsItem.module.scss'
@@ -17,7 +17,7 @@ const TestimonialsRewievsItem = ({ text, title, rating }) => {
 					))}
 				</ul>
 			</div>
-			<Text text={text}></Text>
+			<Text>{text}</Text>
 		</li>
 	)
 }

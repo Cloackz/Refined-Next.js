@@ -3,9 +3,9 @@ import fetchApi from '/utils/api'
 
 import Container from '/components/UI/Container/Container'
 import Heading from '/components/UI/Heading/Heading'
-import Button from '/components/UI/Button/Button'
+import Button from '/components/UI/Btn/Btn'
+import Item from './TestimonialsRewievsItem/TestimonialsRewievsItem'
 
-import Item from './testimonialsRewievsItem/TestimonialsRewievsItem'
 import styles from './Testimonials.module.scss'
 
 const Testimonials = ({
@@ -28,8 +28,12 @@ const Testimonials = ({
 		<section className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
-					<Heading tag='span' text='Testimonials' type='sub'></Heading>
-					<Heading className={styles.Title} text={title} type='page'></Heading>
+					<Heading tag='span' type='sub'>
+						Testimonials
+					</Heading>
+					<Heading className={styles.Title} type='page'>
+						{title}
+					</Heading>
 					<ul className={styles.List}>
 						{reviews.map(item => (
 							<Item

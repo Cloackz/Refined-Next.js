@@ -1,19 +1,20 @@
-import styles from './Instagram.module.scss'
-import Container from '../UI/Container/Container'
-import Heading from '../UI/Heading/Heading'
+import Container from '/components/UI/Container/Container'
+import Heading from '/components/UI/Heading/Heading'
 import Item from './InstagramItem/InstagramItem'
+
+import styles from './Instagram.module.scss'
 
 const Instagram = () => {
 	return (
 		<section className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
-					<Heading tag='span' text='Instagram' type='sub'></Heading>
-					<Heading
-						className={styles.Title}
-						text='follow me '
-						type='page'
-					></Heading>
+					<Heading tag='span' type='sub'>
+						Instagram
+					</Heading>
+					<Heading className={styles.Title} type='page'>
+						follow me
+					</Heading>
 					<ul className={styles.List}>
 						<Item path='/img/instagram1.jpg' alt='Instagram one' />
 						<Item path='/img/instagram2.jpg' alt='Instagram two' />

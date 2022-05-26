@@ -1,5 +1,6 @@
-import styles from './Testimonials.module.scss'
 import Icon from '/components/UI/Icon/Icon'
+
+import styles from './TestimonialsStar.module.scss'
 
 const testimonialsStar = () => {
 	return (

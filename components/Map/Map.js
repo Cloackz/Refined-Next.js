@@ -2,8 +2,9 @@ import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api'
 import Link from 'next/link'
 
+import Button from '/components/UI/Btn/Btn'
+
 import styles from './Map.module.scss'
-import Button from '../UI/Button/Button'
 
 // const MapPage = () => {
 // 	const { isLoaded } = useJsApiLoader({
@@ -29,8 +30,8 @@ import Button from '../UI/Button/Button'
 // export default MapPage
 
 const center = {
-	lat: -3.745,
-	lng: -38.523,
+	lat: 42.875194,
+	lng: -100.550796,
 }
 
 function MapPage() {
@@ -56,7 +57,7 @@ function MapPage() {
 			<GoogleMap
 				mapContainerStyle={{ width: '100%', height: '100%' }}
 				center={center}
-				zoom={10}
+				zoom={15}
 			></GoogleMap>
 			<Link href='https://www.google.com/maps/@40.67,-73.94,12z?hl=ru-RU'>
 				<Button className={styles.Button} type='primary' href='#'>

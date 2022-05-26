@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import '../styles/global.scss'
+import '/styles/global.scss'
 import '/styles/variables.scss'
 import '/public/fonts/font-name.css'
 
