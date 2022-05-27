@@ -7,7 +7,21 @@ import Item from '/components/Faq/FaqItem/FaqItem'
 import styles from '/components/Faq/Faq.module.scss'
 
 const Faq = ({ faq: { data, title } }) => {
-	const [faqs, setFaqs] = useState()
+	const [faqs, setFaqs] = useState(data)
+
+	const checkItem = id => {
+		const localFaqs = [...faqs]
+		const item = localFaqs.find(el => el.id === id)
+
+		if (item.checked) {
+			item.checked = false
+		} else {
+			localFaqs.forEach(el => (el.checked = false))
+			item.checked = true
+		}
+
+		setFaqs(localFaqs)
+	}
 
 	return (
 		<section className={styles.Block}>
@@ -21,7 +35,7 @@ const Faq = ({ faq: { data, title } }) => {
 					</Heading>
 					<ul className={styles.List}>
 						{data.map(faq => (
-							<Item button={faq.button} text={faq.text} key={faq.pk} />
+							<Item item={faq} onClick={checkItem} key={faq.id} />
 						))}
 					</ul>
 				</div>

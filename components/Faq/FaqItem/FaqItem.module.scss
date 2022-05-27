@@ -4,31 +4,18 @@
 	display: flex;
 	flex-direction: column;
 	padding: 20px 0 10px 0;
-	border-bottom: 1px solid $color-pink;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $color-pink;
+	}
 
 	&:first-child {
 		padding: 0 0 10px 0;
 	}
 
-	&:last-child {
-		border: none;
-	}
-
 	&:hover .Button,
 	&:focus .Button {
 		color: $color-pink;
-	}
-
-	&:hover .Button::after {
-		transform: rotate(0deg);
-	}
-
-	&:hover .Button::before {
-		background: $color-pink;
-	}
-
-	&:hover .Button::after {
-		background: $color-pink;
 	}
 }
 
@@ -71,16 +58,16 @@
 		transition: $transition;
 		transform: rotate(90deg);
 	}
+
+	&_active {
+		&::after {
+			transform: rotate(0);
+		}
+	}
 }
 
 .Content {
-	max-height: 0;
 	overflow: hidden;
-	transition: max-height $transition;
-	margin: 10px 0;
-
-	&_show {
-		height: auto;
-		max-height: 190px;
-	}
+	padding: 10px 0;
+	transition: max-height $transition, padding $transition;
 }

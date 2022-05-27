@@ -1,39 +1,44 @@
-import classNames from 'classnames'
+import React, { useState } from 'react'
 
 import Button from '/components/UI/Btn/Btn'
+import Input from '/components/UI/Form/FormInput/FormInput'
+import Area from '/components/UI/Form/FormArea/FormArea'
 
 import styles from './Form.module.scss'
 
-const Form = () => {
+const Form = ({ form }) => {
+	const [forms, setForms] = useState(form)
+
+	const [inputs, setInputs] = useState('')
+	const [error, setError] = useState({})
+
+	const onSubmit = e => {
+		e.preventDefault()
+	}
+
+	const checkInput = id => {
+		const localForms = [...forms]
+		const item = localForms.find(el => el.id === id)
+
+		if (item.checked) {
+			item.checked = true
+		} else {
+			localForms.forEach(el => (el.checked = false))
+			item.checked = true
+		}
+
+		setForms(localForms)
+	}
+
 	return (
-		<form className={styles.Block}>
-			<div className={styles.Control}>
-				<input className={styles.Input} type='text' id='name' />
-				<label className={styles.Label} htmlFor='name'>
-					Name
-				</label>
-			</div>
-			<div className={styles.Control}>
-				<input className={styles.Input} type='text' id='mail' />
-				<label className={styles.Label} htmlFor='mail'>
-					E-mail
-				</label>
-			</div>
-			<div className={styles.Control}>
-				<input className={styles.Input} type='text' id='phone' />
-				<label className={styles.Label} htmlFor='phone'>
-					Phone
-				</label>
-			</div>
-			<div className={classNames(styles.Control, styles.Control_message)}>
-				<textarea
-					className={classNames(styles.Input, styles.Input_message)}
-					id='message'
-				></textarea>
-				<label className={classNames(styles.Label, styles.Label_message)}>
-					Message
-				</label>
-			</div>
+		<form className={styles.Block} onSubmit={onSubmit}>
+			{form.map(input =>
+				input.type === 'textarea' ? (
+					<Area data={input} onClick={checkInput} key={input.pk} />
+				) : (
+					<Input data={input} onClick={checkInput} key={input.pk} />
+				)
+			)}
 			<Button className={styles.Button} type='primary'>
 				Submit
 			</Button>

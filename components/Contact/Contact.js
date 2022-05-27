@@ -9,7 +9,7 @@ import Form from '/components/UI/Form/Form'
 
 import styles from './Contact.module.scss'
 
-const Contact = ({ contact: { title, text } }) => {
+const Contact = ({ contact: { title, text }, form }) => {
 	return (
 		<section className={styles.Block}>
 			<div className={styles.Content}>
@@ -37,7 +37,7 @@ const Contact = ({ contact: { title, text } }) => {
 							</Link>
 							<Social />
 						</div>
-						<Form />
+						<Form form={form} />
 						<div className={styles.Capthca}>
 							<p className={styles.Capthca__text}>
 								This site is protected by reCAPTCHA and the

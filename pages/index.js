@@ -18,6 +18,7 @@ export async function getServerSideProps() {
 	const about = await fetchApi('about')
 	const faq = await fetchApi('faq')
 	const contact = await fetchApi('contact')
+	const form = await fetchApi('form')
 
 	return {
 		props: {
@@ -28,6 +29,7 @@ export async function getServerSideProps() {
 			about,
 			faq,
 			contact,
+			form,
 		},
 	}
 }
@@ -40,6 +42,7 @@ export default function Home({
 	about,
 	faq,
 	contact,
+	form,
 }) {
 	return (
 		<>
@@ -56,7 +59,7 @@ export default function Home({
 					testimonials={testimonials}
 				/>
 				<Faq faq={faq} />
-				<Contact contact={contact} />
+				<Contact contact={contact} form={form} />
 			</Layout>
 		</>
 	)

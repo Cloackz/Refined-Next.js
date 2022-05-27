@@ -57,3 +57,23 @@ blockquote {
 *::after {
 	box-sizing: inherit;
 }
+
+.dropdown-animation-enter {
+	max-height: 0;
+}
+
+.dropdown-animation-enter-active {
+	height: auto;
+	max-height: 190px;
+	transition: $transition;
+}
+
+.dropdown-animation-exit {
+	height: auto;
+	max-height: 190px;
+}
+
+.dropdown-animation-exit-active {
+	max-height: 0;
+	transition: margin $transition;
+}
