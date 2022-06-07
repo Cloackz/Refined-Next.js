@@ -8,26 +8,3 @@
 		flex-wrap: nowrap;
 	}
 }
-
-.Wrapper {
-	display: block;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: $color-bg;
-	width: 30px;
-	height: 30px;
-	border-radius: 100px;
-	margin-right: 20px;
-	transition: $transition;
-
-	&:hover {
-		stroke: $color-bg;
-		background: #a0877d;
-	}
-
-	&:last-child {
-		margin: 0;
-	}
-}

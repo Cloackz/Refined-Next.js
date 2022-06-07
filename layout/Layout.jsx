@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Header from '/components/UI/Header/Header'
 import Footer from '/components/UI/Footer/Footer'
 
-function Layout({ children }) {
+function Layout({ children, social }) {
 	return (
 		<>
 			<Head>
@@ -19,7 +19,7 @@ function Layout({ children }) {
 			</Head>
 			<Header />
 			<main>{children}</main>
-			<Footer />
+			<Footer social={social} />
 		</>
 	)
 }

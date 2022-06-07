@@ -12,11 +12,6 @@
 	&:first-child {
 		padding: 0 0 10px 0;
 	}
-
-	&:hover .Button,
-	&:focus .Button {
-		color: $color-pink;
-	}
 }
 
 .Button {
@@ -24,6 +19,7 @@
 	display: flex;
 	text-align: start;
 	background: transparent;
+	outline: none;
 	cursor: pointer;
 	transition: $transition;
 	font-family: $font-decorative-family;
@@ -44,7 +40,6 @@
 		background: $color-text;
 		top: 10px;
 		right: 0;
-		transition: background $transition;
 	}
 
 	&::after {
@@ -57,6 +52,11 @@
 		right: 0;
 		transition: $transition;
 		transform: rotate(90deg);
+	}
+
+	&:hover,
+	&:focus {
+		color: $color-pink;
 	}
 
 	&_active {

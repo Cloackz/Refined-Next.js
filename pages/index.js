@@ -19,6 +19,7 @@ export async function getServerSideProps() {
 	const faq = await fetchApi('faq')
 	const contact = await fetchApi('contact')
 	const form = await fetchApi('form')
+	const social = await fetchApi('social')
 
 	return {
 		props: {
@@ -30,6 +31,7 @@ export async function getServerSideProps() {
 			faq,
 			contact,
 			form,
+			social,
 		},
 	}
 }
@@ -43,13 +45,14 @@ export default function Home({
 	faq,
 	contact,
 	form,
+	social,
 }) {
 	return (
 		<>
 			<Head>
 				<title>Refined</title>
 			</Head>
-			<Layout>
+			<Layout social={social}>
 				<Hero hero={hero} />
 				<Services services={services} />
 				<Instagram />
@@ -59,7 +62,7 @@ export default function Home({
 					testimonials={testimonials}
 				/>
 				<Faq faq={faq} />
-				<Contact contact={contact} form={form} />
+				<Contact contact={contact} form={form} social={social} />
 			</Layout>
 		</>
 	)

@@ -7,10 +7,10 @@ const Button = ({
 	className = '',
 	onClick = null,
 	children,
+	disabled,
 	...attrs
 }) => {
 	const Tag = attrs.href ? 'a' : 'button'
-
 	return (
 		<Tag
 			className={classNames(
@@ -19,6 +19,7 @@ const Button = ({
 				`${className}`
 			)}
 			onClick={onClick}
+			disabled={disabled}
 		>
 			{children}
 		</Tag>

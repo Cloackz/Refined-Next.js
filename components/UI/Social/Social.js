@@ -1,16 +1,18 @@
+import Item from '/components/UI/Social/SocialItem/SocialItem'
+
 import styles from './Social.module.scss'
 
-import Icon from '/components/UI/Icon/Icon'
-
-const Social = () => {
+const Social = ({ social: { data } }) => {
 	return (
 		<div className={styles.Social}>
-			<span className={styles.Wrapper}>
-				<Icon className={styles.Ico} id='facebook' width='8' height='14' />
-			</span>
-			<span className={styles.Wrapper}>
-				<Icon id='instagram' width='13' height='13' />
-			</span>
+			{data.map(item => (
+				<Item
+					id={item.id}
+					width={item.width}
+					height={item.height}
+					key={item.pk}
+				/>
+			))}
 		</div>
 	)
 }

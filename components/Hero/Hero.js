@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Heading from '/components/UI/Heading/Heading'
 import Button from '/components/UI/Btn/Btn'
@@ -40,9 +41,11 @@ const Hero = ({ hero: { title, text } }) => {
 					{title}
 				</Heading>
 				<Text className={styles.Text}>{text}</Text>
-				<Button className={styles.Button} type='primary' href='#'>
-					Book Now
-				</Button>
+				<Link href='#'>
+					<Button className={styles.Button} type='primary'>
+						Book Now
+					</Button>
+				</Link>
 			</div>
 		</section>
 	)

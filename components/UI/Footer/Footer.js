@@ -8,14 +8,14 @@ import Social from '/components/UI/Social/Social'
 
 import styles from './Footer.module.scss'
 
-const Footer = () => {
+const Footer = ({ social }) => {
 	return (
 		<footer className={styles.Block}>
 			<Container>
 				<div className={styles.Content}>
 					<div className={styles.Wrapper}>
 						<FooterNav />
-						<Social />
+						<Social social={social} />
 					</div>
 					<div className={classNames(styles.Box, styles.Flex)}>
 						<div className={styles.Item}>
@@ -32,7 +32,7 @@ const Footer = () => {
 							<Text type={styles.Info}>
 								Tuesday - Thursday: 10:00am to 6:00pm
 							</Text>
-							<Text type={styles.Info} text='Friday: 10am to 5:00pm' />
+							<Text type={styles.Info}>Friday: 10am to 5:00pm</Text>
 							<Text type={styles.Info}>Select Saturdays 10:00am - 2:00pm</Text>
 							<Text type={styles.Info}>Monday: Closed</Text>
 						</div>

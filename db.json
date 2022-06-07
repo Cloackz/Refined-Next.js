@@ -10,7 +10,7 @@
 		"data": [
 			{
 				"head": "Dermal Filter",
-				"pk": 1,
+				"id": 1,
 				"service": [
 					{
 						"favor": "LIp filler",
@@ -41,7 +41,7 @@
 			},
 			{
 				"head": "Sculptra",
-				"pk": 2,
+				"id": 2,
 				"service": [
 					{
 						"favor": "Upper face sculptra",
@@ -62,7 +62,7 @@
 			},
 			{
 				"head": "Botox / Dysport",
-				"pk": 3,
+				"id": 3,
 				"service": [
 					{
 						"favor": "New Patient Botox/Dysport",
@@ -78,7 +78,7 @@
 			},
 			{
 				"head": "Chemical peel",
-				"pk": 4,
+				"id": 4,
 				"service": [
 					{
 						"favor": "Peel",
@@ -204,7 +204,10 @@
 	},
 	"contact": {
 		"title": "reach me today",
-		"text": "We can’t wait to hear from you! please feel free to connect with us either by phone, social media, or email"
+		"text": "We can’t wait to hear from you! please feel free to connect with us either by phone, social media, or email",
+		"subtitle": "Get in touch",
+		"tel": "(208) 296-5477",
+		"email": "refinedbyrachel@gmail.com"
 	},
 
 	"form": [
@@ -212,25 +215,42 @@
 			"name": "Name",
 			"type": "text",
 			"label": "name",
-			"id": "1"
+			"pk": "1"
 		},
 		{
 			"name": "E-mail",
 			"type": "text",
 			"label": "mail",
-			"id": "2"
+			"pk": "2"
 		},
 		{
 			"name": "Phone",
 			"type": "text",
 			"label": "phone",
-			"id": "3"
+			"pk": "3"
 		},
 		{
 			"name": "Message",
 			"type": "textarea",
 			"label": "message",
-			"id": "4"
+			"pk": "4"
 		}
-	]
+	],
+
+	"social": {
+		"data": [
+			{
+				"id": "instagram",
+				"width": "16",
+				"height": "16",
+				"pk": 1
+			},
+			{
+				"id": "facebook",
+				"width": "8",
+				"height": "14",
+				"pk": 2
+			}
+		]
+	}
 }

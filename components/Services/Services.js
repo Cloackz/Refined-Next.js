@@ -47,7 +47,7 @@ const Services = ({ services: { title, text } }) => {
 							</List>
 						</div>
 					</div>
-					<Button className={styles.Button} type='secondary' href='#'>
+					<Button className={styles.Button} type='secondary'>
 						Book Now
 					</Button>
 				</div>

@@ -9,7 +9,11 @@ import Form from '/components/UI/Form/Form'
 
 import styles from './Contact.module.scss'
 
-const Contact = ({ contact: { title, text }, form }) => {
+const Contact = ({
+	contact: { title, text, subtitle, tel, email },
+	form,
+	social,
+}) => {
 	return (
 		<section className={styles.Block}>
 			<div className={styles.Content}>
@@ -26,24 +30,25 @@ const Contact = ({ contact: { title, text }, form }) => {
 					<div className={styles.Inner}>
 						<Text className={styles.Text}>{text}</Text>
 						<div className={styles.Info}>
-							<h3 className={styles.Info__title}>Get in touch</h3>
+							<h3 className={styles.Info__title}>{subtitle}</h3>
 							<Link href='tel:+2082965477'>
 								<a className={classNames(styles.Link, styles.Info__tel)}>
-									(208) 296-5477
+									{tel}
 								</a>
 							</Link>
 							<Link href='#'>
-								<a className={styles.Link}>refinedbyrachel@gmail.com</a>
+								<a className={styles.Link}>{email}</a>
 							</Link>
-							<Social />
+							<Social social={social} />
 						</div>
 						<Form form={form} />
 						<div className={styles.Capthca}>
 							<p className={styles.Capthca__text}>
 								This site is protected by reCAPTCHA and the
-								<a className={styles.Capthca__link}>Google Privacy Policy</a>
-								<a className={styles.Capthca__link}>Terms of Service apply.</a>
 							</p>
+							<a className={styles.Capthca__link}>Google Privacy Policy</a>
+							<span className={styles.Capthca__text}>and</span>
+							<a className={styles.Capthca__link}>Terms of Service apply.</a>
 						</div>
 					</div>
 				</div>
